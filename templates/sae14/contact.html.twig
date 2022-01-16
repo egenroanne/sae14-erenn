@@ -1,0 +1,109 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact - Eren Turkoglu{% endblock %}
+
+{% block body %}
+
+<script>
+    function contactbtnclick(){
+        
+        document.getElementById("contactdone").style.visibility = "visible";
+    
+        if(document.getElementById("contactinput1").value.length != 0 && document.getElementById("contactinput2").value.length != 0 && document.getElementById("contactinput3").value.length != 0 && document.getElementById("contactinput4").value.length != 0){
+            document.getElementById("contactdonemsj").classList.remove('alert-danger')
+            document.getElementById("contactdonemsj").classList.add('alert-primary')
+            document.getElementById("contactdonemsj").innerHTML = "<strong>I got your message. Thanks.</strong>";
+        }else{
+            document.getElementById("contactdonemsj").classList.remove('alert-primary')
+            document.getElementById("contactdonemsj").classList.add('alert-danger')
+            document.getElementById("contactdonemsj").innerHTML = "<strong>Please fill the required fields.</strong>";
+        }
+
+    }
+</script>
+
+<!-- navbar menu START-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarColor02">
+      <center><ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/sae14">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/cv">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/me">Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul></center>
+    </div>
+  </div>
+</nav>
+
+<!-- navbar menu FINISH-->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- form contact START -->
+
+<div id="contact">
+
+    <h4 style="text-align:center;font-weight:900;position:relative;margin-top:10%;">Contact</h4>
+
+    <form style="width:20rem;display:block;margin: 0 auto;">
+      <fieldset>
+        <div class="form-group">
+          <label class="col-form-label mt-4" for="inputDefault">Nom</label>
+          <input id="contactinput1" type="text" class="form-control" placeholder="Votre Nom" id="inputDefault">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label mt-4">Email adresse</label>
+          <input id="contactinput2" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label mt-4" for="inputDefault">Sujet</label>
+          <input id="contactinput3" type="text" class="form-control" placeholder="Sujet" id="inputDefault">
+        </div>
+        <div class="form-group">
+          <label for="exampleTextarea" class="form-label mt-4">Description</label>
+          <textarea id="contactinput4" class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <center><button type="button" class="btn btn-primary" onclick="contactbtnclick();">Submit</button></center>
+      </fieldset>
+    </form>
+</div>
+
+<!-- form contact FINISH -->
+
+<p>&nbsp;</p>
+
+<center><div id="contactdone" style="visibility:hidden;width:50%;">
+    
+    <div id="contactdonemsj" class="alert alert-dismissible alert-primary">
+      <strong>I got your message. Thanks.</strong>
+    </div>
+    
+</div></center>
+
+<p>&nbsp;</p>
+
+</div>
+
+<footer style="background-color : #555555;padding:1%;">
+    <center>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</center>
+</footer>
+
+{% endblock %}

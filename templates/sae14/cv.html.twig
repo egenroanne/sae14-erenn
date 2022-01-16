@@ -1,0 +1,131 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CV - Eren Turkoglu{% endblock %}
+
+{% block body %}
+
+<script>
+    function cvbtnclick(){
+        
+        document.getElementById("cvdown").style.visibility = "visible";
+    
+        if(document.getElementById("cvinput1").value.length != 0 && document.getElementById("cvinput2").value.length != 0){
+            document.getElementById("cvdownmsj").classList.remove('alert-danger')
+            document.getElementById("cvdownmsj").classList.add('alert-primary')
+            document.getElementById("cvdownbtn").style.visibility = "visible";
+            document.getElementById("cvdownmsj").innerHTML = "<strong>I got your message. You can download my CV.</strong>";
+        }else{
+            document.getElementById("cvdownmsj").classList.remove('alert-primary')
+            document.getElementById("cvdownmsj").classList.add('alert-danger')
+            document.getElementById("cvdownbtn").style.visibility = "hidden";
+            document.getElementById("cvdownmsj").innerHTML = "<strong>Please fill the required fields.</strong>";
+        }
+
+    }
+</script>
+
+<!-- navbar menu START-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarColor02">
+      <center><ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/sae14">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/cv">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/me">Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/contact">Contact</a>
+        </li>
+      </ul></center>
+    </div>
+  </div>
+</nav>
+
+<!-- navbar menu FINISH-->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- cv START -->
+
+<div id="cvv">
+
+    <h4 style="text-align:center;font-weight:900;position:relative;">CV</h4>
+    
+    <p>&nbsp;</p>
+    
+    <center><img src="https://i.hizliresim.com/qg925gv.PNG" alt="cv-de-eren" style="width:40%;"></center>
+
+</div>
+
+<!-- cv FINISH -->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<div id="cvform">
+
+    <h4 style="text-align:center;font-weight:900;position:relative;margin-top:10%;">Download</h4>
+    
+    <form style="width:20rem;display:block;margin: 0 auto;">
+      <fieldset>
+        <div class="form-group">
+          <label class="col-form-label mt-4" for="inputDefault">Nom</label>
+          <input id="cvinput1" type="text" class="form-control" placeholder="Votre Nom" id="inputDefault">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label mt-4">Email adresse</label>
+          <input id="cvinput2" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleSelect1" class="form-label mt-4">Why you want do download ?</label>
+          <select class="form-select" id="exampleSelect1">
+            <option>Job offer</option>
+            <option>Request an app</option>
+            <option>Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleTextarea" class="form-label mt-4">Description</label>
+          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <center><button type="button" class="btn btn-primary" onclick="cvbtnclick();">Submit</button></center>
+      </fieldset>
+    </form>
+
+</div>
+
+<p>&nbsp;</p>
+
+<center><div id="cvdown" style="visibility:hidden;width:50%;">
+    
+    <div id="cvdownmsj" class="alert alert-dismissible alert-primary">
+      <strong>I got your message. You can download my CV.</strong>
+    </div>
+    
+    <a role="button" href="https://drive.google.com/uc?export=download&id=1x373RZ3eAuXmKnYR6Ghj5UOnGzqB4zhl" download><button id="cvdownbtn" type="button" class="btn btn-primary">Download</button></a>
+    
+</div></center>
+
+<p>&nbsp;</p>
+
+<footer style="background-color : #555555;padding:1%;">
+    <center>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</center>
+</footer>
+
+{% endblock %}

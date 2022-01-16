@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Me - Eren Turkoglu{% endblock %}
+
+{% block body %}
+
+<!-- navbar menu START-->
+
+<center><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/sae14">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/cv">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav></center>
+
+<!-- navbar menu FINISH-->
+
+<div id="me">
+
+<div class="card border-primary mb-3" style="max-width: 75%;display:block;margin: 0 auto;margin-top:10%;">
+  <div class="card-header"><h4 style="text-align:center;font-weight:900;position:relative;margin-top:1%;">Me</h4></div>
+  <div class="card-body">
+  
+ <p>Bonjour,<br>Je m'appelle Eren Turkoglu. J'ai 17 ans. Je suis en train d'étudier la formation Réseaux et télécommunication dans l'IUT de Roanne.<br></p>
+<img style="width:30%;display:block;margin:0 auto;" src="https://i.hizliresim.com/hp6ko20.jpeg" alt="iut-de-roanne">
+<p>Je vais vous parler de mes loisirs. J'aime bien voyager et découvrir les lieux que j'ai jamais vu.</p>
+<img style="width:30%;display:block;margin:0 auto;" src="https://cdn.pixabay.com/photo/2017/04/05/01/13/trip-2203682_960_720.jpg" alt="photo-voyage">
+<p>Et j'aime bien programmer, faire des nouvaux jeux et applications.J'ai codé avec les langages Java, PHP et C#. Vous pourez consulter mes travaux avec cette lien la : <br><a href="">Lien Google Play</a></p>
+<img style="width:30%;display:block;margin:0 auto;" src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg" alt="photo-programmer">
+<p>Vous pouvez me contacter e, utilisant la page contact ou avec cette adresse e-mail : eren.turkoglu@etu.univ-st-etienne.fr</p>
+
+<center><div id="socialmediadiv" style="display: block;margin: 0 auto;">
+  <a href="#"><img src="https://cdn.pixabay.com/photo/2017/08/22/11/56/linked-in-2668700_960_720.png" alt="linkedin" style="width: 40px;"></a>
+  <img src="https://cdn.pixabay.com/photo/2017/06/22/14/23/twitter-2430933_960_720.png" alt="twitter" style="width: 40px;margin-left:10px;">
+  <img src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670_960_720.png" alt="instagram" style="width: 40px;margin-left:10px;">
+  <img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_960_720.png" alt="facebook" style="width: 40px;margin-left:10px;">
+</div></center>
+  
+  </div>
+
+</div>
+
+<footer style="background-color : #555555;padding:1%;">
+    <center>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</center>
+</footer>
+
+{% endblock %}

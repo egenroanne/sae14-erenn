@@ -1,0 +1,248 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio - Eren Turkoglu{% endblock %}
+
+{% block body %}
+
+<script>
+    function portfoliobtnclick(){
+    
+        document.getElementById("portfoliodown").style.visibility = "visible";
+    
+        if(document.getElementById("portfolioinput1").value.length != 0 && document.getElementById("portfolioinput2").value.length != 0){
+            document.getElementById("portfoliodownmsj").classList.remove('alert-danger')
+            document.getElementById("portfoliodownmsj").classList.add('alert-primary')
+            document.getElementById("portfoliodownbtn").style.visibility = "visible";
+            document.getElementById("portfoliodownmsj").innerHTML = "<strong>I got your message. You can download my portfolio.</strong>";
+        }else{
+            document.getElementById("portfoliodownmsj").classList.remove('alert-primary')
+            document.getElementById("portfoliodownmsj").classList.add('alert-danger')
+            document.getElementById("portfoliodownbtn").style.visibility = "hidden";
+            document.getElementById("portfoliodownmsj").innerHTML = "<strong>Please fill the required fields.</strong>";
+        }
+    
+    }
+</script>
+
+<!-- navbar menu START-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarColor02">
+      <center><ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/sae14">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/cv">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/me">Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sae14/contact">Contact</a>
+        </li>
+      </ul></center>
+    </div>
+  </div>
+</nav>
+
+<!-- navbar menu FINISH-->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- portfolio START -->
+
+<div id="portfolioo">
+
+    <h4 style="text-align:center;font-weight:900;position:relative;">Portfolio</h4>
+    
+    <table class="table table-condensed table-striped">
+       
+        <tr>
+            <td style="text-align:center;">Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Comprendre les principes et standards du codage de l’information</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Configurer les fonctions de base du réseau local</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration etadministration des réseaux et services fournis</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Savoir identifier les dysfonctionnements du réseau local</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Installer un poste client et le sécuriser</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Mesurer et analyser les signaux</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Déployer des supports de transmission</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Communiquer avec un client ou un collaborateur</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Lire, exécuter, corriger et modifier un programme</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Traduire un algorithme, dans un langage et pour un environnement donné</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align:center;">Connaître l’architecture et les technologies d’un site Web</th>
+            <td style="width:40%;">
+                <div class="progress progress-striped">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+                </div>
+            </td>
+        </tr>
+    
+    </table>
+
+</div>
+
+<!-- portfolio FINISH -->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<div id="portfolioform">
+
+    <h4 style="text-align:center;font-weight:900;position:relative;margin-top:10%;">Download</h4>
+    
+    <form style="width:20rem;display:block;margin: 0 auto;">
+      <fieldset>
+        <div class="form-group">
+          <label class="col-form-label mt-4" for="inputDefault">Nom</label>
+          <input id="portfolioinput1" type="text" class="form-control" placeholder="Votre Nom" id="inputDefault">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label mt-4">Email adresse</label>
+          <input id="portfolioinput2" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleSelect1" class="form-label mt-4">Why you want do download ?</label>
+          <select class="form-select" id="exampleSelect1">
+            <option>Job offer</option>
+            <option>Request an app</option>
+            <option>Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleTextarea" class="form-label mt-4">Description</label>
+          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <center><button type="button" class="btn btn-primary" onclick="portfoliobtnclick();">Submit</button></center>
+      </fieldset>
+    </form>
+
+</div>
+
+<p>&nbsp;</p>
+
+<center><div id="portfoliodown" style="visibility:hidden;width:50%;">
+    
+    <div id="portfoliodownmsj" class="alert alert-dismissible alert-primary">
+      <strong>I got your message. You can download my portfolio.</strong>
+    </div>
+    
+    <a role="button" href="https://drive.google.com/uc?export=download&id=1bB2ZCitCO6Rdd2GOv1-9CTaQCD_diSu0" download><button type="button" id="portfoliodownbtn" class="btn btn-primary">Download</button></a>
+    
+</div></center>
+
+<p>&nbsp;</p>
+
+<footer style="background-color : #555555;padding:1%;">
+    <center>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</center>
+</footer>
+
+{% endblock %}

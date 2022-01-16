@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Eren Turkoglu{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<!-- navbar menu START-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sae14/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sae14/cv">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sae14/me">Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sae14/contact">Contact</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="sae14/modif">Modification</a>
+        </li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- navbar menu FINISH-->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div>
+    <img style="width:17%;display:block;margin: 0 auto;border-radius:80%;" src="https://i.hizliresim.com/tifd8d0.jpeg" alt="eren-turkoglu">
+</div>
+
+<div style="position:relative;margin-top:3%;">
+<h3 style="text-align:center;font-weight:900;">Hi, I'm Eren.</h3>
+<h5 style="text-align:center;font-weight:1500;">I'm Programmer and Student</h5>
+</div>
+
+<center><a href="/sae14/me"><button type="button" class="btn btn-primary" style="margin-top:2%;">More</button></a></center>
+
+{% endblock %}
