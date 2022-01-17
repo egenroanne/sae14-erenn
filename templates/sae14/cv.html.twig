@@ -13,12 +13,12 @@
             document.getElementById("cvdownmsj").classList.remove('alert-danger')
             document.getElementById("cvdownmsj").classList.add('alert-primary')
             document.getElementById("cvdownbtn").style.visibility = "visible";
-            document.getElementById("cvdownmsj").innerHTML = "<strong>I got your message. You can download my CV.</strong>";
+            document.getElementById("cvdownmsj").innerHTML = "<strong>J'ai reçu votre message. Vous pouvez télécharger mon CV.</strong>";
         }else{
             document.getElementById("cvdownmsj").classList.remove('alert-primary')
             document.getElementById("cvdownmsj").classList.add('alert-danger')
             document.getElementById("cvdownbtn").style.visibility = "hidden";
-            document.getElementById("cvdownmsj").innerHTML = "<strong>Please fill the required fields.</strong>";
+            document.getElementById("cvdownmsj").innerHTML = "<strong>Veuillez remplir les champs requis.</strong>";
         }
 
     }
@@ -44,7 +44,7 @@
           <a class="nav-link" href="/sae14/cv">CV</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/sae14/me">Me</a>
+          <a class="nav-link" href="/sae14/me">Moi</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/sae14/contact">Contact</a>
@@ -78,7 +78,7 @@
 
 <div id="cvform">
 
-    <h4 style="text-align:center;font-weight:900;position:relative;margin-top:10%;">Download</h4>
+    <h4 style="text-align:center;font-weight:900;position:relative;margin-top:10%;">Télécharger</h4>
     
     <form style="width:20rem;display:block;margin: 0 auto;">
       <fieldset>
@@ -87,16 +87,16 @@
           <input id="cvinput1" type="text" class="form-control" placeholder="Votre Nom" id="inputDefault">
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1" class="form-label mt-4">Email adresse</label>
-          <input id="cvinput2" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <label for="exampleInputEmail1" class="form-label mt-4">Adresse e-mail</label>
+          <input id="cvinput2" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre adresse e-mail">
         </div>
         
         <div class="form-group">
-          <label for="exampleSelect1" class="form-label mt-4">Why you want do download ?</label>
+          <label for="exampleSelect1" class="form-label mt-4">Pourquoi voulez-vous le télécharger?</label>
           <select class="form-select" id="exampleSelect1">
-            <option>Job offer</option>
-            <option>Request an app</option>
-            <option>Other</option>
+            <option>Offre d'emploi</option>
+            <option>Demander une application</option>
+            <option>Autre</option>
           </select>
         </div>
         
@@ -104,7 +104,7 @@
           <label for="exampleTextarea" class="form-label mt-4">Description</label>
           <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
         </div>
-        <center><button type="button" class="btn btn-primary" onclick="cvbtnclick();">Submit</button></center>
+        <center><button type="button" class="btn btn-primary" onclick="cvbtnclick();">Envoyer</button></center>
       </fieldset>
     </form>
 
@@ -115,10 +115,10 @@
 <center><div id="cvdown" style="visibility:hidden;width:50%;">
     
     <div id="cvdownmsj" class="alert alert-dismissible alert-primary">
-      <strong>I got your message. You can download my CV.</strong>
+      <strong>J'ai reçu votre message. Vous pouvez télécharger mon CV.</strong>
     </div>
     
-    <a role="button" href="https://drive.google.com/uc?export=download&id=1x373RZ3eAuXmKnYR6Ghj5UOnGzqB4zhl" download><button id="cvdownbtn" type="button" class="btn btn-primary">Download</button></a>
+    <a role="button" href="https://drive.google.com/uc?export=download&id=1x373RZ3eAuXmKnYR6Ghj5UOnGzqB4zhl" download><button id="cvdownbtn" type="button" class="btn btn-primary">Télécharger</button></a>
     
 </div></center>
 

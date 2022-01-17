@@ -13,12 +13,12 @@
             document.getElementById("portfoliodownmsj").classList.remove('alert-danger')
             document.getElementById("portfoliodownmsj").classList.add('alert-primary')
             document.getElementById("portfoliodownbtn").style.visibility = "visible";
-            document.getElementById("portfoliodownmsj").innerHTML = "<strong>I got your message. You can download my portfolio.</strong>";
+            document.getElementById("portfoliodownmsj").innerHTML = "<strong>J'ai reçu votre message. Vous pouvez télécharger mon portfolio.</strong>";
         }else{
             document.getElementById("portfoliodownmsj").classList.remove('alert-primary')
             document.getElementById("portfoliodownmsj").classList.add('alert-danger')
             document.getElementById("portfoliodownbtn").style.visibility = "hidden";
-            document.getElementById("portfoliodownmsj").innerHTML = "<strong>Please fill the required fields.</strong>";
+            document.getElementById("portfoliodownmsj").innerHTML = "<strong>Veuillez remplir les champs requis.</strong>";
         }
     
     }
@@ -44,7 +44,7 @@
           <a class="nav-link" href="/sae14/cv">CV</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/sae14/me">Me</a>
+          <a class="nav-link" href="/sae14/me">Moi</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/sae14/contact">Contact</a>
@@ -195,7 +195,7 @@
 
 <div id="portfolioform">
 
-    <h4 style="text-align:center;font-weight:900;position:relative;margin-top:10%;">Download</h4>
+    <h4 style="text-align:center;font-weight:900;position:relative;margin-top:10%;">Télécharger</h4>
     
     <form style="width:20rem;display:block;margin: 0 auto;">
       <fieldset>
@@ -204,16 +204,16 @@
           <input id="portfolioinput1" type="text" class="form-control" placeholder="Votre Nom" id="inputDefault">
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1" class="form-label mt-4">Email adresse</label>
-          <input id="portfolioinput2" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <label for="exampleInputEmail1" class="form-label mt-4">Adresse e-mail</label>
+          <input id="portfolioinput2" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre adresse e-mail">
         </div>
         
         <div class="form-group">
-          <label for="exampleSelect1" class="form-label mt-4">Why you want do download ?</label>
+          <label for="exampleSelect1" class="form-label mt-4">Pourquoi voulez-vous le télécharger?</label>
           <select class="form-select" id="exampleSelect1">
-            <option>Job offer</option>
-            <option>Request an app</option>
-            <option>Other</option>
+            <option>Offre d'mploi</option>
+            <option>Demander une application</option>
+            <option>Autre</option>
           </select>
         </div>
         
@@ -221,7 +221,7 @@
           <label for="exampleTextarea" class="form-label mt-4">Description</label>
           <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
         </div>
-        <center><button type="button" class="btn btn-primary" onclick="portfoliobtnclick();">Submit</button></center>
+        <center><button type="button" class="btn btn-primary" onclick="portfoliobtnclick();">Envoyer</button></center>
       </fieldset>
     </form>
 
@@ -232,10 +232,10 @@
 <center><div id="portfoliodown" style="visibility:hidden;width:50%;">
     
     <div id="portfoliodownmsj" class="alert alert-dismissible alert-primary">
-      <strong>I got your message. You can download my portfolio.</strong>
+      <strong>J'ai reçu votre message. Vous pouvez télécharger mon portfolio.</strong>
     </div>
     
-    <a role="button" href="https://drive.google.com/uc?export=download&id=1bB2ZCitCO6Rdd2GOv1-9CTaQCD_diSu0" download><button type="button" id="portfoliodownbtn" class="btn btn-primary">Download</button></a>
+    <a role="button" href="https://drive.google.com/uc?export=download&id=1bB2ZCitCO6Rdd2GOv1-9CTaQCD_diSu0" download><button type="button" id="portfoliodownbtn" class="btn btn-primary">Télécharger</button></a>
     
 </div></center>
 
